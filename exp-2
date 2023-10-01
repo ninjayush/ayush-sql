@@ -1,1 +1,7 @@
-
+create table marks (
+	stid int,
+    	aadhaarno varchar(14),
+    	physics int,
+    	chemistry int,
+	    maths int
+);
