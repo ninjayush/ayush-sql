@@ -32,7 +32,7 @@ select * from student join marks;
 
 select count(*) from student where marks<=70 and marks>=50;
 
-select stname from student where hobby = 'sport' or hobby = 'dance';
+select stname from student where hobby = 'music' or hobby = 'dance';
 
 select * from student join marks on marks.aadhaarno=student.aadhaarno;
 
