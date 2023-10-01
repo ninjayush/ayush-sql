@@ -30,7 +30,7 @@ select stname, stid, dob from student join marks on student.aadhaarno = marks.aa
 
 select * from student join marks;
 
-select count(*) from student where marks<=70 and maarks>=50;
+select count(*) from student where marks<=70 and marks>=50;
 
 select stname from student where hobby = 'sport' or hobby = 'dance';
 
