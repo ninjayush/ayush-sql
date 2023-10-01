@@ -4,18 +4,13 @@ use superchaina;
 create table student (
 	stid int,
 	stname varchar(25),
-	aadhaarno varchar(14) unique not null,
+	aadhaarno int unique not null,
     marks int,
-    hobby enum('dance','music','sport')
-);
-    
-create table marks (
-	stid int,
-    aadhaarno varchar(14),
-    physics int,
-    chemistry int,
-    maths int
+    hobby enum('dance','music','sport'),
+    cellno int
 );
 
-
-    
+alter table student modify aadhaarno int primary key;
+alter table student add dob date;
+alter table student drop cellno;
+alter table student drop stid;
